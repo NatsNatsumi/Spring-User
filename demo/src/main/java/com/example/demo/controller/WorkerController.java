@@ -16,9 +16,9 @@ public class WorkerController {
     @Autowired
     private WorkerRepository workerRepository;
 
-    @GetMapping("/")
-    public void getWorker() {
-        System.out.println("しとる");
+    @GetMapping("/test")
+    public void createTestData() {
+
     }
 
     @GetMapping("/worker")
@@ -33,5 +33,18 @@ public class WorkerController {
         // worker.setTeam_id(20);
 
         // return worker;
+    }
+
+    @GetMapping("/user")
+    @ResponseBody
+    public Worker getUser() {
+
+        Worker worker = new Worker();
+        worker.setId(4);
+        worker.setName("NatNatsumi");
+        worker.setWeight(400);
+        worker.setTeam_id(20);
+
+        return worker;
     }
 }
