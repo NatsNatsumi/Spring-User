@@ -10,12 +10,13 @@ import com.example.demo.entity.Worker;
 @RestController
 public class WorkerController {
     @GetMapping("/")
-    public void getWorker(){
+    public void getWorker() {
         System.out.println("しとる");
     }
+
     @GetMapping("/user")
     @ResponseBody
-    public Worker getUser(){
+    public Worker getUser() {
         Worker worker = new Worker();
         worker.setId(4);
         worker.setName("NatNatsumi");
