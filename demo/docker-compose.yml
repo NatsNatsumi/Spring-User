@@ -5,8 +5,8 @@ services:
     image: postgres:10
     container_name: "db"
     environment:
-      POSTGRES_USER: natsuuser
-      POSTGRES_PASSWORD: natsuuser
+      POSTGRES_USER: natsu
+      POSTGRES_PASSWORD: natsu
       POSTGRES_DB: natsudb
     ports:
       - "15432:5432"
